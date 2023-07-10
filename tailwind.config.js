@@ -1,9 +1,11 @@
 module.exports = {
-  content: ['./src/**/*.{html,js}'],
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    extend: {},
-    fontFamily: {
-      satisfy: ['satisfy', 'cursive'],
+    extend: {
+      fontFamily: {
+        satisfy: ['Satisfy', 'cursive'],
+        andika: ['Andika', 'sans-serif'],
+      },
     },
   },
   plugins: [],

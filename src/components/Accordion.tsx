@@ -12,7 +12,7 @@ const Accordion = (props: PropsAccordion) => {
     }
 
     return (
-        <div className={`w-[400px] md:w-[1200px] p-3 shadow-lg border border-[#c9c6c655] rounded-md mb-3 duration-500 group ${active === 1 ? 'is-active bg-white' : ''}`}
+        <div className={`max-w-7xl mx-auto p-3 shadow-lg border border-[#c9c6c655] rounded-md mb-3 duration-500 group ${active === 1 ? 'is-active bg-white' : ''}`}
         >
             <div className="flex ">
                 <i className="fa-solid fa-messages"/>

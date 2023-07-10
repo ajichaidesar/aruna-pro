@@ -1,21 +1,20 @@
-import React from 'react'
-import Hero from '../components/Hero';
-import Info from '../components/Info';
-import Layanan from "../components/Layanan";
-import Galery from "../components/Galery";
-import Paq from "../components/Paq";
+import React from 'react';
+import Hero from '../components/beranda/Hero';
+import Info from '../components/beranda/Info';
+import Layanan from '../components/beranda/Layanan';
+import Galery from '../components/beranda/Galery';
+import Paq from '../components/Paq';
 
 const Home = () => {
   return (
     <div>
       <Hero />
       <Info />
-
-      <Layanan />  
-      <Galery />
+      <Layanan />
+      <Galery />,
       <Paq />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

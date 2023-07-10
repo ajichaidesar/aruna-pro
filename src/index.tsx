@@ -1,94 +1,94 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "./index.css";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./pages/Home";
-import Kontak from "./pages/Kontak";
-import Tentang from "./pages/Tentang";
-import Artikel from "./pages/Artikel";
-import Arunasdc from "./pages/Arunasdc";
-import Rumaharuna from "./pages/Rumaharuna";
-import Workshop from "./components/Workshop";
-import Daftar from "./components/Daftar";
-import Detailartikel from "./components/Detailartikel";
-import Register from "./components/Register";
-import Register2 from "./components/Register2";
-import Kurikulum from "./pages/Kurikulum";
-// import Kurikulum from "./components/Kurikulum";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Home from './pages/Home';
+import Kontak from './pages/Kontak';
+import Tentang from './pages/Tentang';
+import Artikel from './pages/Artikel';
+import Arunasdc from './pages/Arunasdc';
+import Rumaharuna from './pages/Rumaharuna';
+import Workshop from './components/Workshop';
+import Daftar from './components/Daftar';
+import Detailartikel from './components/artikels/Detailartikel';
+import Register from './components/Register';
+import Register2 from './components/kontakkami/Register2';
+import Kurikulum from './pages/Kurikulum';
+import Detailprogram from './components/rumaharuna/Detailprogram';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <App />,
     children: [
       { index: true, element: <Home /> },
       {
-        path: "tentang",
+        path: 'tentang',
         element: <Tentang />,
       },
       {
-        path: "kontak",
+        path: 'kontak',
         element: <Kontak />,
       },
       {
-        path: "artikel",
+        path: 'artikel',
         element: <Artikel />,
       },
       {
-        path: "artikel/Detailartikel",
+        path: 'artikel/Detailartikel',
         element: <Detailartikel />,
       },
       {
-        path: "Rumah-Aruna",
+        path: 'Rumah-Aruna',
         element: <Rumaharuna />,
       },
       {
-        path: "Rumah-Aruna/Kurikulum",
+        path: 'Rumah-Aruna/Program',
+        element: <Detailprogram />,
+      },
+      {
+        path: 'Rumah-Aruna/Kurikulum',
         element: <Kurikulum />,
       },
       {
-        path: "Aruna-SDC",
+        path: 'Aruna-SDC',
         element: <Arunasdc />,
       },
       {
-        path: "Aruna-SDC/Workshop",
+        path: 'Aruna-SDC/Workshop',
         element: <Workshop />,
       },
       {
-        path: "Aruna-SDC/Workshop/register",
+        path: 'Aruna-SDC/Workshop/register',
         element: <Register />,
       },
       {
-        path: "Daftar",
+        path: 'Daftar',
         element: <Daftar />,
       },
       {
-        path: "Detail-Artikel",
+        path: 'Detail-Artikel',
         element: <Detailartikel />,
       },
       {
-        path: "register",
+        path: 'register',
         element: <Register />,
       },
       {
-        path: "register2",
+        path: 'register2',
         element: <Register2 />,
       },
-      // {
-      //   path: "kurikulum",
-      //   element: <Kurikulum />,
-      // },
     ],
   },
 ]);
 
-const root = ReactDOM.createRoot(document.getElementById("root")!);
+const root = ReactDOM.createRoot(document.getElementById('root')!);
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>
+  </React.StrictMode>,
 );
 
 // If you want to start measuring performance in your app, pass a function

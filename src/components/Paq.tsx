@@ -26,7 +26,7 @@ function Paq() {
     {
       question: (
         <>
-          {/* <img src={Vector} alt="Vector" className="icon" /> */}
+          
           Lorem ipsum dolor sit amet, consectetur adipiscing elit ?
         </>
       ),
