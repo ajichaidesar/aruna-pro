@@ -21,7 +21,7 @@ const Sosialmendia = () => {
 
   return (
     <div className='mb-3 font-andika'>
-      <h3 className='text-2xl sm:text-3xl text-black'>SOSIAL MEDIA</h3>
+      <h3 className='text-lg sm:text-xl text-black'>SOSIAL MEDIA</h3>
       <ul className='pl-2'>
         {socialMediaData.map((item, index) => (
           <li className='pb-2' key={index}>

@@ -12,7 +12,7 @@ const Contact = () => {
 
   return (
     <div className='mb-3 font-andika'>
-      <h3 className='text-2xl sm:text-3xl'>Kontak Kami</h3>
+      <h3 className='text-lg sm:text-xl'>Kontak Kami</h3>
       <ul>
         {contactData.map((contact, index) => (
           <li key={index} className='pb-2'>

@@ -24,18 +24,22 @@ const Layanan = () => {
       <div className='flex'>
         <h3 className='text-white text-2xl md:text-3xl pt-1'>Layanan Kami</h3>
       </div>
-      <div className='flex-row flex mt-8'>
-        <div className='w-[2500] sm:w-[3100px] h-[1000] sm:h-[1400px] -rotate-90 bg-white mt-[1700px] rounded-full rounded-tr-none rounded-br-none absolute' />
+      <div className='flex-row flex mt-4 sm:mt-8'>
+        <div className='w-[2500] sm:w-[3100px] h-[1000px] sm:h-[1400px]  bg-white mt-[1700px] rounded-full rounded-tr-none rounded-br-none absolute' />
         {servicesData.map((service) => (
           <div
-            className='bg-white rounded-md p-4 w-[170] sm:w-[200px] first:shadow-lg flex flex-col items-center mx-8'
+            className='bg-white py-2 rounded-md sm:p-4 w-[170] sm:w-[200px] first:shadow-lg flex flex-col items-center mx-4 sm:mx-8'
             key={service.id}
           >
             <div>
-              <img src={service.logo} alt='service logo' className='h-18' />
+              <img
+                src={service.logo}
+                alt='service logo'
+                className='h-10 sm:h-18'
+              />
             </div>
-            <div className='text-center'>
-              <h3 className='text-xl mt-2'>{service.title}</h3>
+            <div className='text-center '>
+              <h3 className='text-md sm:text-xl mt-2'>{service.title}</h3>
               <p className='text-sm mt-2'>{service.description}</p>
             </div>
           </div>

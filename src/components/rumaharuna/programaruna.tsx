@@ -5,27 +5,27 @@ import { image2 } from '../../assets/img/galery/index';
 import Detailprogram from './Detailprogram';
 import { Link } from 'react-router-dom';
 
+const programData = [
+  {
+    image: image2,
+    title: 'Sekolah Anak',
+    phoneNumber: '1234567890',
+    guideUrl: 'https://example.com/guide1',
+  },
+  {
+    image: image2,
+    title: 'Mitra Sekolah',
+    phoneNumber: '9876543210',
+    guideUrl: 'https://www.google.com',
+  },
+];
+
+const openWhatsAppChat = (phoneNumber: string) => {
+  const url = `https://api.whatsapp.com/send?phone=${phoneNumber}`;
+  window.open(url, '_blank');
+};
+
 const programaruna = () => {
-  const programData = [
-    {
-      image: image2,
-      title: 'Sekolah Anak',
-      phoneNumber: '1234567890',
-      guideUrl: 'https://example.com/guide1',
-    },
-    {
-      image: image2,
-      title: 'Mitra Sekolah',
-      phoneNumber: '9876543210',
-      guideUrl: 'https://www.google.com',
-    },
-  ];
-
-  const openWhatsAppChat = (phoneNumber: string) => {
-    const url = `https://api.whatsapp.com/send?phone=${phoneNumber}`;
-    window.open(url, '_blank');
-  };
-
   const renderPrograms = () => {
     return programData.map((program, index) => (
       <>
