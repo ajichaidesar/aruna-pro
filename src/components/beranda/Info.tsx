@@ -1,5 +1,6 @@
 import React from 'react';
-import { icon1, icon2, icon3 } from '../../assets/img/icon/index';
+import { icon1, icon2, icon3 } from '../../assets/img/icon/index'; /* eslint-disable @typescript-eslint/no-unused-vars */
+
 
 const data = [
   {
@@ -21,11 +22,11 @@ const data = [
 
 const Info = () => {
   return (
-    <div className='max-w-7xl font-andika mx-auto flex justify-center items-center m-8'>
+    <div className='max-w-7xl font-andika mx-auto flex justify-center items-center m-8' >
       {data.map((item, index) => (
         <div
           key={index}
-          className='bg-white w-[200px] h-[180px] sm:h-[250px] rounded-md p-2 sm:p-4 shadow-lg flex flex-col items-center mr-1 ml-8'
+          className='bg-white w-[200px] h-[180px] sm:h-[250px] rounded-md p-2 sm:p-4 shadow-lg flex flex-col items-center mr-1 ml-8 '
         >
           <img
             src={item.Icon_info}
